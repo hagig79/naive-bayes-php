@@ -1,0 +1,8 @@
+services:
+  app:
+    build: .
+    volumes:
+      - .:/app
+    user: "1000:1000"
+    working_dir: /app
+    tty: true
